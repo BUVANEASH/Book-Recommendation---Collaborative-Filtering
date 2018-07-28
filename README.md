@@ -24,7 +24,3 @@ For recommendations for a particular Item (by default K-Neighbors is set to 10).
  ```
  python main.py
  ```
- 
- ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
