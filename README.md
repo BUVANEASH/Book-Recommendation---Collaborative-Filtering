@@ -3,17 +3,21 @@ Book Recommendation System using SVD and KNN for User/Item based collaborative f
 
 ## Running the Book Recommendation
 
-The program recommends books for a particular User based CF using singular-value decomposition (SVD) algorithm `--SVD` and recommends books related to a particular book based on CF using k-Nearest Neighbors algorithm `--KNN`
+The program recommends books for a particular User based on CF using singular-value decomposition (SVD) algorithm `--SVD` and recommends books related to a particular book based on CF using k-Nearest Neighbors algorithm `--KNN`. Both the algorithms are run on explicit user ratings.
 
 ### Example
 
-For recommendations for a particular user (by default SVD latent factor is set to 50). The output prints the books already rated by the user and then the recommendations
+For recommendations for a particular user (by default SVD latent factor is set to 50). 
+Enter the user ID within the displayed range when prompted. 
+The output prints the books already rated by the user and then the top 10 recommendations.
 
 ```
 python main.py --SVD
 ```
 
-For recommendations for a particular Item (by default K-Neighbors is set to 10). The output prints the Top K recommended books.
+For recommendations for a particular Book (by default K-Neighbors is set to 10). 
+Enter the book title when prompted. (Choose Book Title from the `./Book/Books(explicit).csv` file)
+The output prints the Top 10 recommended books.
 
  ```
  python main.py --KNN
